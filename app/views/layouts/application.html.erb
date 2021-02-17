@@ -12,7 +12,16 @@
 
   <body>
     <header>
-      <%= image_tag("logo.png") %>
+      <nav>
+        <%= image_tag("logo.png") %>
+          <ul>
+            <li>
+              <%= link_to "Events", events_path %> 
+            </li>
+             
+          </ul>
+      </nav>
+      
     </header>
     <%= yield %>
   </body>
