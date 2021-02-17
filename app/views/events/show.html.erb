@@ -1,0 +1,10 @@
+<section class="event-details">
+  <div class="details">
+    <h1><%= @event.name %></h1>
+    <h2><%= display_price(@event) %></h2>
+    <h3> <%= display_date(@event.event_start_date) %> in <%= @event.location %> </h3>
+    <p>
+      <%= @event.description %>
+    </p>
+  </div>
+</section>
