@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_01_12_201343) do
+ActiveRecord::Schema.define(version: 2021_01_15_122311) do
 
   create_table "events", force: :cascade do |t|
     t.string "name"
@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 2021_01_12_201343) do
     t.date "event_end_date"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.text "description", default: "Default event description. Please, change."
   end
 
 end
