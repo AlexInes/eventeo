@@ -1,0 +1,24 @@
+<h1>Editing <%= @event.name %></h1>
+
+<%= form_with(model: @event) do |f| %>
+
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :location %>
+  <%= f.text_field :location %>
+
+  <%= f.label :description %>
+  <%= f.text_area :description, rows: 5 %>
+
+  <%= f.label :price %>
+  <%= f.number_field :price %>
+
+  <%= f.label :event_start_date %>
+  <%= f.datetime_select :event_start_date, {ampm: true}, {class:"datetime"} %>
+
+  <%= f.label :event_end_date %>
+  <%= f.datetime_select :event_end_date, {ampm: true}, {class:"datetime"} %>
+
+  <%= f.submit %>
+<% end %>
